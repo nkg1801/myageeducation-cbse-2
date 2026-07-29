@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:layout_centerHorizontal="true"
+        android:text="You have an unfinished Test on the selected subject.\n\nHow would you like to begin this test?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center" />
+
+    <ImageButton
+        android:id="@+id/buttonStartUnfinishedTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:contentDescription="@string/image"
+        android:src="@drawable/startunfinishedtest" />
+
+    <ImageButton
+        android:id="@+id/buttonStartNewTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonStartUnfinishedTest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop ="20dp"
+        android:background="@null"
+        android:contentDescription="@string/image"
+        android:src="@drawable/startnewtest" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admob_banner_adunitid">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

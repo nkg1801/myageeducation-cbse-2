@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerHorizontal="true"
+                android:background="#FFFFFF">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_above="@+id/adView"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admob_banner_adunitid">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:text="The paid version of this app works without internet connection. Tap here to know more"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#cbcbb3"
+        android:background="#000000"
+        android:id="@+id/openPlaystore"
+        android:clickable="true"
+        android:onClick="onClickOpenPlayStore"
+        />
+
+</RelativeLayout>

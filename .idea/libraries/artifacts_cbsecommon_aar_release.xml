@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="artifacts:cbsecommon_aar-release">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/cbsecommon_aar-release.aar/1dde53dab8449c71c4a499d8b27c5d6e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/cbsecommon_aar-release.aar/1dde53dab8449c71c4a499d8b27c5d6e/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/cbsecommon_aar-release.aar/1dde53dab8449c71c4a499d8b27c5d6e/jars/libs/firebase-client-android-2.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 37
+    namespace 'com.myAgeEducation.cbseClass2'
+
+    /* Whats new in version
+        24: calendar generator included, Question set prefixed with v24 to support calendar type questions
+        23: clock generator code included
+        22: sdk change to 37, interstitial app removed while starting the test
+        21: sdk change to 34
+        18: - Integrating Cue maths Olympiad ad
+        1.17 - Integrating Cue maths ad
+        1.16 - moving to its own firebase project
+        1.13 - revision problem solved
+        1.12 - App share link included
+        1.19 - App rating link corrected, cue maths button on chapter activity removed, upgraded to new sdk - NOT PUBLISHED
+        1.20 - app advertising id included in manifest
+    */
+
+    defaultConfig {
+        applicationId "com.myAgeEducation.cbseClass2"
+        minSdkVersion 26
+        targetSdkVersion 37
+        multiDexEnabled true
+        versionCode 24
+        versionName "1.24"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../MySchoolMyTest_1.jks")
+            storePassword "duliajan"
+            keyAlias "myschoolmytest"
+            keyPassword "duliajan"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads:25.4.0'
+    implementation project(":cbsecommon_aar-release")
+    implementation 'com.google.firebase:firebase-database:22.0.1'
+    implementation 'com.squareup.picasso:picasso:2.71828' // do not change this, it creates some problems - Nand
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+}

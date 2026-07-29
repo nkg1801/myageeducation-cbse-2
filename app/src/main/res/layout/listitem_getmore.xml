@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:background="#FFFFF5">
+
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:text="my 2048"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000500"
+        android:textSize="@dimen/subject_text_size"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textViewAppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewAppImage"
+        android:layout_width="@dimen/getmore_image_size"
+        android:layout_height="@dimen/getmore_image_size"
+        android:layout_below="@+id/textViewAppTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/g2048"/>
+
+    <TextView
+        android:id="@+id/textViewAppDescription"
+        android:text="my 2048 is a numerical puzzle. It helps in developing analytical skills and quick thinking. The game is played by swiping left/right/top/bottom. The similar adjacent numbers will add up to make bigger numbers. Minimum target of the game is to achieve the number tile 256, though you may achieve much higher than this."
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/imageViewAppImage"
+        android:layout_toRightOf="@+id/imageViewAppImage"
+        android:layout_below="@+id/textViewAppTitle"
+        android:textColor="@color/tag_line_text_color"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonGetItNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:text = "Get it now"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:focusable="false"
+        android:tag="https://play.google.com/store/apps/details?id=moderndayeducation.game2048"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_dark_grey"/>
+
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text = "Share"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:focusable="false"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_dark_grey"/>
+<!--
+    <TextView
+        android:id="@+id/textViewHorizontalLine"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/buttonGetItNow"
+        android:background="#BDBDBD"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        />-->
+</RelativeLayout>

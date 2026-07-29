@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:checked="true"
+        android:text="Random Questions" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDisplayTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_below="@+id/checkBox1"
+        android:checked="true"
+        android:text="Display Timer" />
+
+    <CheckBox
+        android:id="@+id/checkBoxScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxDisplayTimer"
+        android:checked="true"
+        android:text="Display Score with every question" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxScore"
+        android:text="Allow to change the answer" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBox2"
+        android:checked="true"
+        android:text="Display answer feedback with every question" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBox4"
+        android:layout_marginTop="15dp"
+        android:text="Move to the next question after answering" />
+    
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBox3"
+        android:layout_marginTop="15dp"
+        android:text="Display the correct answer if the choosen answer is wrong" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonMainMenu"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="21dp"
+        android:text="Note: This page is still under development"
+        android:textColor="#FF0000" />
+
+    <ImageButton
+        android:id="@+id/buttonMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:contentDescription="@string/image"
+        android:src="@drawable/main_menu" />
+    
+</RelativeLayout>

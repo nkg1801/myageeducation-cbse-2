@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="chapters">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="grade">
+        <item>Grade-II</item>
+        <item>Grade-III</item>
+    </string-array>
+    <string-array name="percentage">
+        <item>100%</item>
+        <item>95%</item>
+        <item>90%</item>
+        <item>85%</item>
+        <item>80%</item>
+        <item>75%</item>
+        <item>70%</item>
+        <item>65%</item>
+        <item>60%</item>
+        <item>55%</item>
+        <item>50%</item>
+    </string-array>
+    <string-array name="points">
+        <item>100%</item>
+        <item>95%</item>
+        <item>90%</item>
+        <item>85%</item>
+        <item>80%</item>
+        <item>75%</item>
+        <item>70%</item>
+        <item>65%</item>
+        <item>60%</item>
+        <item>55%</item>
+        <item>50%</item>
+    </string-array>
+    <string-array name="points_table_colnames">
+        <item>Sl No</item>
+        <item>Subject</item>
+        <item>Chapters</item>
+        <item>Questions</item>
+        <item>Score</item>
+        <item>Points</item>
+    </string-array>
+    <string-array name="start_mode">
+        <item>From where I left last</item>
+        <item>From the beginning</item>
+    </string-array>
+    <string-array name="subjects">
+        <item>EVS</item>
+        <item>General Knowledge</item>
+        <item>Maths</item>
+        <item>English</item>
+        <item>Moral Science</item>
+        <item>Computer Science</item>
+    </string-array>
+    <color name="rounded_button_backcolor">#D35400</color>
+    <dimen name="about_apartment_textsize">13sp</dimen>
+    <dimen name="getmore_image_size">120dp</dimen>
+    <dimen name="roundedtextview_radius">20dp</dimen>
+    <dimen name="seekbar_height">20dp</dimen>
+    <dimen name="subject_text_size">30sp</dimen>
+    <string name="all_chapters">All Available Chapters</string>
+    <string name="all_questions">All Questions</string>
+    <string name="any">Any</string>
+    <string name="app_name">CbseCommon</string>
+    <string name="chapter_range">  Chapters: All Chapters</string>
+    <string name="chapters">Chapters</string>
+    <string name="clear_all_rewards">Clear All Rewards</string>
+    <string name="create">Create</string>
+    <string name="create_new_reward">Create New Reward</string>
+    <string name="for1">For</string>
+    <string name="from">From</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="image">Image</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="margin_top">25dp</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_point_settings">Point Settings</string>
+    <string name="menu_reward_settings">Reward Settings</string>
+    <string name="menu_settings">Settings</string>
+    <string name="minimum">Minimum</string>
+    <string name="next_question">Next Question</string>
+    <string name="no_of_questions">  No of Questions:</string>
+    <string name="problem_connecting_server">Problem connecting to server. Server is inaccessible</string>
+    <string name="question_number">Question Number</string>
+    <string name="questions">Questions</string>
+    <string name="reward_name">Reward Name</string>
+    <string name="rewards">Rewards:</string>
+    <string name="select_subject">Select a subject</string>
+    <string name="start_revision">Start Revision</string>
+    <string name="start_test">Start Test</string>
+    <string name="sub_1">EVS</string>
+    <string name="sub_2">Maths</string>
+    <string name="subject">Subject</string>
+    <string name="take_revision">Take Revision</string>
+    <string name="title_activity_main">DPS Class 4</string>
+    <string name="title_chapter_selection">Chapter Selection</string>
+    <string name="title_reward_settings">Reward Settings</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_subject_selection">Subject Selection</string>
+    <string name="title_test_report">Test Report</string>
+    <string name="to">To</string>
+    <string name="your_score">Your score:</string>
+</resources>

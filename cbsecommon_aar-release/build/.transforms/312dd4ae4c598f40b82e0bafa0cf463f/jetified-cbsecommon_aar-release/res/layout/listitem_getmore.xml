@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageViewAppImage"
+        android:layout_width="@dimen/getmore_image_size"
+        android:layout_height="@dimen/getmore_image_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/g2048"/>
+
+    <TextView
+        android:id="@+id/textViewVerticalLine"
+        android:layout_height="@dimen/getmore_image_size"
+        android:layout_width="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/imageViewAppImage"
+        android:background="#BDBDBD"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:text="my 2048"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/textViewVerticalLine"
+        android:textColor="#FFEB3B"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/subject_text_size"
+        />
+
+    <TextView
+        android:id="@+id/textViewAppDescription"
+        android:text="my 2048 is a numerical puzzle. It helps in developing analytical skills and quick thinking. The game is played by swiping left/right/top/bottom. The similar adjacent numbers will add up to make bigger numbers. Minimum target of the game is to achieve the number tile 256, though you may achieve much higher than this."
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/textViewVerticalLine"
+        android:layout_below="@+id/textViewAppTitle"
+        android:textColor="#B2FF59"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="13sp"
+        />
+
+    <Button
+        android:id="@+id/buttonGetItNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAppDescription"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:text = "Get it now"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:focusable="false"
+        android:tag="https://play.google.com/store/apps/details?id=moderndayeducation.game2048"
+        android:background="@drawable/rounded_button"/>
+
+    <TextView
+        android:id="@+id/textViewHorizontalLine"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/buttonGetItNow"
+        android:background="#BDBDBD"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        />
+</RelativeLayout>

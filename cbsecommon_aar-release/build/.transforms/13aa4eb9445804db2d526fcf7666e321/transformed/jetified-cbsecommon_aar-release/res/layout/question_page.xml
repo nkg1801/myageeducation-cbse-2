@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textViewQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/question_number" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textViewQuestionNumber"
+        android:layout_above="@+id/tableLayout1"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/textViewQuestion"
+                android:text="Question text goes here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewQuestion"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:text=""/>
+
+            <RadioButton
+                android:id="@+id/radio_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_option1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"/>
+
+            <RadioButton
+                android:id="@+id/radio_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_option2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" />
+
+            <RadioButton
+                android:id="@+id/radio_option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_option3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/radio_option4"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/image"
+                android:clickable="true"
+                android:onClick="onClickAdImage"
+                android:src="@drawable/december_2014" />
+
+            <TextView
+                android:id="@+id/textViewSupportiveText"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/radio_option4"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:text = "myAge Education"
+                android:typeface="monospace"
+                android:background="#dbd5d5"/>
+
+            <ImageView
+                android:id="@+id/imageViewRight"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/textViewQuestion"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                android:contentDescription="@string/image"
+                android:src="@drawable/right" />
+
+            <ImageView
+                android:id="@+id/imageViewWrong"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/textViewQuestion"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                android:contentDescription="@string/image"
+                android:src="@drawable/cross" />
+        </RelativeLayout>
+    </ScrollView>
+
+  <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/tableLayout1"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="*"
+             android:layout_above="@+id/tableLayout2">
+
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonExitTest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Exit Test"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:text="Next Q"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:background="#0bFbaf"
+            android:gravity="center_horizontal|center_vertical"
+             />
+      </TableRow>
+  </TableLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/tableLayout2"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:stretchColumns="*"
+                 android:layout_alignParentBottom="true">
+
+        <TableRow  android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Subject"
+                android:background="#AAB7B8"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:id="@+id/textViewTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#AAB7B8"
+                    android:textColor="#FFFFFF"
+                    android:paddingRight="5dp"
+                    android:gravity="right"
+                    android:text="Timer"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

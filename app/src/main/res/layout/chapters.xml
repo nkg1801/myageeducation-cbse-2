@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#71A58A" >
+
+    <TextView
+        android:id="@+id/textViewChapterRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/chapter_range"
+        />
+
+    <TextView
+        android:id="@+id/textViewSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="0dp"
+        android:background="#3A7A32"
+        android:paddingStart="10dp"
+        android:textColor="@color/colorWhite"
+        android:gravity="end"
+        android:text="Subject"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:paddingEnd="10dp" />
+
+    <TextView
+        android:id="@+id/textViewChapterSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSubject"
+        android:paddingLeft="10dp"
+        android:background="@color/rounded_button_backcolor"
+        android:textColor="@color/colorWhite"
+        android:text="Chapter Selection" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollChapters"
+        android:background="#229954"
+        android:fadeScrollbars="false"
+        android:layout_below="@+id/textViewChapterSelection">
+
+        <TableLayout
+            android:orientation="horizontal"
+            android:id="@+id/tableLayoutChapters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textViewSelectedChapters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontalScrollChapters"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorWhite"
+        android:text="= Selected Chapters"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/textViewSelectedColor"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewSelectedChapters"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/textViewSelectedChapters"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorChapterHighlightColor"
+        android:layout_toStartOf="@+id/textViewSelectedChapters"
+        android:layout_marginEnd="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAllChapters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontalScrollChapters"
+        android:textColor="@color/colorWhite"
+		android:layout_marginTop = "20dp"
+        android:text="@string/all_chapters" />
+
+    <TextView
+        android:id="@+id/textViewQuestionCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxAllChapters"
+        android:background="@color/rounded_button_backcolor"
+        android:textColor="@color/colorWhite"
+        android:text="@string/no_of_questions"
+        android:paddingStart="10dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarNoOfQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewQuestionCount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:max="49" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAllQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarNoOfQuestions"
+        android:textColor="@color/colorWhite"
+        android:text="@string/all_questions" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_below="@+id/buttonStartTest"
+        android:layout_above="@+id/buttonFreeCuemath"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent"
+        android:onClick="onClickViewFlipper"
+        android:visibility="gone">
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/buttonFreeCuemath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button_red"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:onClick="onClickAdButton"
+        android:textColor="@color/colorWhite"/>
+
+    <Button
+        android:id="@+id/buttonStartTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxAllQuestions"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="Start Test"
+        android:textColor="@color/colorWhite"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admob_banner_adunitid">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="10dip">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Please enter your name" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Your city" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCity"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
+    <TextView
+        android:id="@+id/textViewWaitingForData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextCity"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        android:text="Connecting to server, please wait..."
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWaitingForData"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Continue"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admob_banner_adunitid">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

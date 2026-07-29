@@ -1,0 +1,20 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <dimen name="about_apartment_textsize">13sp</dimen>
+    <dimen name="top_margin_for_about_apartment">20dp</dimen>
+
+    <dimen name="subject_image_width">80dp</dimen>
+    <dimen name="subject_text_size">30sp</dimen>
+    <dimen name="offline_version_textsize">15sp</dimen>
+    <dimen name="offline_version_firstview_topmargin">40dp</dimen>
+    <dimen name="chapterbutton_size">30dp</dimen>
+    <dimen name="chapterbutton_height">100dp</dimen>
+    <dimen name="chapterbutton_height2">100dp</dimen>
+    <dimen name="chapterbutton_width">150dp</dimen>
+    <dimen name="roundedtextview_radius">20dp</dimen>
+
+</resources>

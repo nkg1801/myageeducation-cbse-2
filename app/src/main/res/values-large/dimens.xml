@@ -1,0 +1,15 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="subject_image_width">100dp</dimen>
+    <dimen name="subject_text_size">45sp</dimen>
+    <dimen name="offline_version_textsize">20sp</dimen>
+    <dimen name="offline_version_firstview_topmargin">60dp</dimen>
+    <dimen name="chapterbutton_size">50dp</dimen>
+    <dimen name="chapterbutton_height">200dp</dimen>
+    <dimen name="chapterbutton_height2">800dp</dimen>
+    <dimen name="roundedtextview_radius">20dp</dimen>
+
+</resources>

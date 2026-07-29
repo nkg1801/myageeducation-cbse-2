@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textViewRewardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/reward_name" />
+
+    <EditText
+        android:id="@+id/editTextRewardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewRewardName"
+        android:layout_alignBottom="@+id/textViewRewardName"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewRewardName"
+        android:layout_below="@+id/textViewRewardName"
+        android:layout_marginTop="25dp"
+        android:text="@string/subject" />
+
+    <Spinner
+        android:id="@+id/spinnerSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/editTextRewardName"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textViewChapters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/chapters" />
+    
+
+
+	    <RadioButton
+	        android:id="@+id/radioButtonAny"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textViewChapters"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginTop="5dp"
+	        android:text="@string/any" />
+	    
+	     <RadioButton
+	        android:id="@+id/radioButtonFrom"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/radioButtonAny"
+	        android:layout_below="@+id/radioButtonAny"
+	        android:text="@string/from" />
+ 
+    <Spinner
+        android:id="@+id/spinnerAnyNChapters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButtonAny"
+        android:layout_alignBottom="@+id/radioButtonAny"
+        android:layout_toRightOf="@+id/textViewRewardName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinnerAnyNChapters"
+        android:layout_alignBottom="@+id/spinnerAnyNChapters"
+        android:layout_toRightOf="@+id/spinnerAnyNChapters"
+        android:text="@string/chapters" />
+
+   
+
+    <Spinner
+        android:id="@+id/spinnerChapterFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButtonFrom"
+        android:layout_alignBottom="@+id/radioButtonFrom"
+        android:layout_toLeftOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textViewChaptersTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinnerChapterFrom"
+        android:layout_alignBottom="@+id/spinnerChapterFrom"
+        android:layout_toRightOf="@+id/spinnerChapterFrom"
+        android:text="@string/to" />
+
+    <Spinner
+        android:id="@+id/spinnerChapterTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButtonFrom"
+        android:layout_alignBottom="@+id/radioButtonFrom"
+        android:layout_toRightOf="@+id/textViewChaptersTo" />
+
+    <TextView
+        android:id="@+id/textViewQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewChapters"
+        android:layout_below="@+id/radioButtonFrom"
+        android:layout_marginTop="20dp"
+        android:text="@string/questions" />
+
+    <RadioButton
+        android:id="@+id/radioButtonAllQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButtonFrom"
+        android:layout_below="@+id/textViewQuestions"
+        android:layout_marginTop="5dp"
+        android:text="@string/all_questions" />
+
+    <RadioButton
+        android:id="@+id/radioButtonMinimum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButtonAllQuestions"
+        android:layout_below="@+id/radioButtonAllQuestions"
+        android:layout_marginTop="-10dp"
+        android:text="@string/minimum" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioButtonMinimum"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/radioButtonMinimum"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButtonMinimum"
+        android:layout_alignBottom="@+id/radioButtonMinimum"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/editText2"
+        android:text="@string/questions" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinnerChapterTo"
+        android:layout_alignBottom="@+id/spinnerChapterTo"
+        android:layout_toRightOf="@+id/spinnerChapterTo"
+        android:text="@string/chapters" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/create" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@+id/buttonCreate"
+        android:layout_alignParentLeft="true"
+        android:background="#55460d" />
+
+    <TextView
+        android:id="@+id/textViewRewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewQuestions"
+        android:layout_below="@+id/radioButtonMinimum"
+        android:layout_marginTop="10dp"
+        android:text="@string/rewards" />
+
+    <Spinner
+        android:id="@+id/spinnerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRewards"
+        android:layout_alignLeft="@+id/radioButtonFrom"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/editTextEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinnerScore"
+        android:layout_alignBaseline="@+id/spinnerScore"
+        android:layout_toRightOf="@+id/spinnerScore"
+        android:layout_marginTop="10dp"
+        android:text = "  Score ="/>
+    
+     <EditText
+        android:id="@+id/editTextPoints"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRewards"
+        android:layout_toRightOf="@+id/editTextEqual"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/editTextEqual"
+        android:ems="10"
+        android:inputType="number" />
+
+     <TextView
+         android:id="@+id/textViewPoints"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/editTextEqual"
+         android:layout_alignBottom="@+id/editTextEqual"
+         android:layout_toRightOf="@+id/editTextPoints"
+         android:text="  Points" />
+   
+</RelativeLayout>

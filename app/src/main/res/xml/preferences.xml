@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference
+        android:key="random_questions"
+        android:title="Random Questions"
+        android:summary="Display Questions randomly"
+        android:defaultValue="true" />
+    
+    <CheckBoxPreference
+        android:key="display_timer"
+        android:title="Display Timer"
+        android:summary="Display Timer at the bottom of the screen"
+        android:defaultValue="true" />
+    
+    <CheckBoxPreference
+        android:key="score_with_every_question"
+        android:title="Score with every question"
+        android:summary="Display Score with every question"
+        android:defaultValue="true"
+         />
+    <CheckBoxPreference 
+        android:key="allow_to_change_answer"
+        android:title="Allow to change the ans"
+        android:summary="Allow the user to change the answer before moving to the next question"
+        android:defaultValue="false"
+        
+        />
+    
+    <CheckBoxPreference 
+        android:key="display_answer_feedback"
+        android:title="Display answer feedback"
+        android:summary="Tell the user whether the choosen answer is correct or wrong immediately"
+        android:defaultValue="true"
+        />
+    
+    <CheckBoxPreference 
+        android:key="move_to_next_question"
+        android:title="Move to next question"
+        android:summary="Moves to the next question immediately after answering a question. Next button is not shown"
+        android:defaultValue="false"
+        />
+    
+    <CheckBoxPreference
+        android:key="display_correct_ans"
+        android:title="Display correct answer"
+        android:summary="Display the correct answer if the choosen answer is wrong"
+        android:defaultValue="false"
+         />
+    
+
+</PreferenceScreen>

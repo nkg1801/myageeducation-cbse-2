@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myAgeEducation.cbseClass2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:name="com.myAgeEducation.cbseClass2.CbseApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- admob metadata is the requirement of the future AdMob SDK and is not required now
+             To make it future-proof, it is included with Ver 1.14
+             ca-app-pub-4837855590190532~4119299833 is app id of CBSE-2 in AdMob -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4837855590190532~7296166604"/>
+
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.QuestionPage"
+            android:label="Test"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".GetMore"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- <activity
+            android:name="com.myAgeEducation.cbseClass2.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+
+        </activity> -->
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.LoginSignupActivity"
+            android:label="Login Signup"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.SubjectList"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.Chapters"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.TestReport"
+            android:label="@string/title_test_report"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.ScoreHistory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.Settings"
+            android:label="@string/title_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.SettingsActivity"
+            android:label="@string/title_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.PointSettings"
+            android:label="Points Settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.RewardsTable"
+            android:label="Rewards"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.PointsTable"
+            android:label="Points Table"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.myAgeEducation.cbseClass2.StartMode"
+            android:label="Start Mode"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.myAgeEducation.cbsecommon.GetMore"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <item android:id="@+id/menu_add_reward_points"
+        android:title="Add reward point"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    
+     <item android:id="@+id/menu_delete_reward_point"
+        android:title="Delete reward point"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/menu_clear_all_reward_points"
+        android:title="Clear all rewards points"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+	<item android:id="@+id/menu_help"
+        android:title="@string/menu_help"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    
+</menu>
