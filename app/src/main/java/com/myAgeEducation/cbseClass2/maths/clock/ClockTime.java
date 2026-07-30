@@ -1,4 +1,4 @@
-package com.myAgeEducation.cbseClass2;
+package com.myAgeEducation.cbseClass2.maths.clock;
 
 import androidx.annotation.NonNull;
 

@@ -1,16 +1,15 @@
-package com.myAgeEducation.cbseClass2;
+package com.myAgeEducation.cbseClass2.maths.calendar;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
 import android.graphics.Typeface;
 
 import java.text.DateFormatSymbols;
 import java.util.Calendar;
 
-public class CalendarGenerator {
+public class CalendarImageGenerator {
 
     private static final int PADDING = 30;
     private static final float MONTH_TEXT_SIZE = 100;
@@ -36,8 +35,7 @@ public class CalendarGenerator {
     private static final int WEEKDAY_TEXT =
             Color.BLACK;
 
-    public static Bitmap generateCalendar(
-            int year,
+    public static Bitmap generateCalendar(int year,
             int month,
             int size) {
 
@@ -147,20 +145,6 @@ public class CalendarGenerator {
         paint.setTextSize(WEEKDAY_TEXT_SIZE);
         paint.setTypeface(Typeface.DEFAULT_BOLD);
 
-        /*for (int i = 0; i < 7; i++) {
-
-            float x =
-                    PADDING
-                            + cellWidth * i
-                            + cellWidth / 2;
-
-            canvas.drawText(
-                    days[i],
-                    x,
-                    WEEKDAY_Y,
-                    paint);
-        }*/
-
         for (int i = 0; i < 7; i++) {
 
             float x = PADDING + cellWidth * i + cellWidth / 2;
@@ -197,13 +181,7 @@ public class CalendarGenerator {
     // Dates
     //-----------------------------------------------------
 
-    private static void drawDates(
-            Canvas canvas,
-            Paint paint,
-            float width,
-            float height,
-            int year,
-            int month) {
+    private static void drawDates(Canvas canvas, Paint paint, float width, float height, int year, int month) {
 
         Paint sundayPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         sundayPaint.setColor(SUNDAY_BG);

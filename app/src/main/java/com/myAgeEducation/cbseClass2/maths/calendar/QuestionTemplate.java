@@ -1,4 +1,4 @@
-package com.myAgeEducation.cbseClass2;
+package com.myAgeEducation.cbseClass2.maths.calendar;
 
 import java.time.DayOfWeek;
 import java.time.Month;

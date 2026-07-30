@@ -1,4 +1,4 @@
-package com.myAgeEducation.cbseClass2;
+package com.myAgeEducation.cbseClass2.maths.clock;
 
 import java.util.ArrayList;
 import java.util.Collections;

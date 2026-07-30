@@ -1,15 +1,13 @@
-package com.myAgeEducation.cbseClass2;
+package com.myAgeEducation.cbseClass2.maths.clock;
 import android.graphics.*;
+import com.myAgeEducation.cbseClass2.Util;
 import java.util.Random;
 
-public class ClockGenerator {
-
+public class ClockImageGenerator {
     public static Bitmap generateClock(int hour, int minute, int size, Util.BackgroundTheme theme) {
 
         Bitmap bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
-
-        //canvas.drawColor(Color.WHITE);
 
         Paint bgPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         bgPaint.setStyle(Paint.Style.FILL);
@@ -65,47 +63,34 @@ public class ClockGenerator {
 
                 canvas.drawText(String.valueOf(num),tx,ty,numberPaint);
             }
-
         }
 
         drawHands(canvas,cx,cy,radius,hour,minute,size);
-
         return bitmap;
     }
 
-    private static void drawHands(Canvas canvas,float cx,float cy,float radius,
-                                  int hour,int minute,int size){
+    private static void drawHands(Canvas canvas,float cx,float cy,float radius, int hour,int minute,int size){
 
         Paint minutePaint=new Paint(Paint.ANTI_ALIAS_FLAG);
         minutePaint.setColor(Color.RED);
         minutePaint.setStrokeWidth(size*0.015f);
-
         Paint hourPaint=new Paint(Paint.ANTI_ALIAS_FLAG);
         hourPaint.setColor(new Color().rgb(0,140,0));
         hourPaint.setStrokeWidth(size*0.03f);
-
         double minuteAngle=Math.toRadians(minute*6-90);
-
         double hourAngle=Math.toRadians((hour%12+minute/60.0)*30-90);
-
         float mx=(float)(cx+Math.cos(minuteAngle)*radius*0.82f);
         float my=(float)(cy+Math.sin(minuteAngle)*radius*0.82f);
-
         float hx=(float)(cx+Math.cos(hourAngle)*radius*0.55f);
         float hy=(float)(cy+Math.sin(hourAngle)*radius*0.55f);
-
         canvas.drawLine(cx,cy,mx,my,minutePaint);
-
         canvas.drawLine(cx,cy,hx,hy,hourPaint);
-
         Paint center=new Paint(Paint.ANTI_ALIAS_FLAG);
         center.setColor(Color.BLACK);
-
         canvas.drawCircle(cx,cy,size*0.02f,center);
     }
 
     private static int getBackgroundColor(Util.BackgroundTheme theme) {
-
         switch (theme) {
 
             case LIGHT_BLUE:
@@ -153,5 +138,4 @@ public class ClockGenerator {
                 return Color.WHITE;
         }
     }
-
 }
